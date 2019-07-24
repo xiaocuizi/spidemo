@@ -6,7 +6,6 @@ import org.springframework.stereotype.Service;
 /**
  * CashChargeHandler
  *
- * @author <a href="mailto:cuidaochang@redefine.global">cuidaochang</a>
  * @date 2019/7/23 15:21
  * @since 1.0.0
  */

@@ -12,7 +12,6 @@ import org.springframework.web.server.WebHandler;
 /**
  * WebFluxConfig
  *
- * @author <a href="mailto:cuidaochang@redefine.global">cuidaochang</a>
  * @date 2019/7/23 17:58
  * @since 1.0.0
  */

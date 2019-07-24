@@ -13,7 +13,6 @@ import static org.springframework.web.reactive.function.server.ServerResponse.ok
 /**
  * StudentHandler
  *
- * @author <a href="mailto:cuidaochang@redefine.global">cuidaochang</a>
  * @date 2019/7/23 18:03
  * @since 1.0.0
  */

@@ -15,7 +15,6 @@ import java.util.concurrent.ConcurrentHashMap;
 /**
  * ConsumeFactory
  *
- * @author <a href="mailto:cuidaochang@redefine.global">cuidaochang</a>
  * @date 2019/7/23 15:26
  * @since 1.0.0
  */

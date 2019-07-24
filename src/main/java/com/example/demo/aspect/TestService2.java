@@ -6,7 +6,6 @@ import org.springframework.stereotype.Service;
 /**
  * TestService2
  *
- * @author <a href="mailto:cuidaochang@redefine.global">cuidaochang</a>
  * @date 2019/7/23 14:03
  * @since 1.0.0
  */
