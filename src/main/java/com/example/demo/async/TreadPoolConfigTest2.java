@@ -18,7 +18,6 @@ import java.util.concurrent.Executor;
  * @since 1.0.0
  */
 @Configuration
-@EnableAsync
 public class TreadPoolConfigTest2 implements AsyncConfigurer {
 
     @Override

@@ -56,10 +56,11 @@
 			<artifactId>guava</artifactId>
 			<version>26.0-jre</version>
 		</dependency>
-		<dependency>
-			<groupId>jde</groupId>
-			<artifactId></artifactId>
-		</dependency>
+		<!--<dependency>
+			<groupId>com.gemini</groupId>
+			<artifactId>study-spring-boot-stater</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>-->
 	</dependencies>
 
 	<build>

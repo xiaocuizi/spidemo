@@ -1,8 +1,11 @@
 package com.example.demo;
 
 import com.example.demo.webflux.StudentHandler;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
 import org.springframework.http.MediaType;
 import org.springframework.http.server.reactive.HttpHandler;
 import org.springframework.http.server.reactive.ReactorHttpHandlerAdapter;
@@ -18,7 +21,8 @@ import static org.springframework.web.reactive.function.server.RouterFunctions.t
 
 @SpringBootApplication
 @EnableWebFlux
-public class DemoApplication {
+@EnableAsync
+public class DemoApplication implements CommandLineRunner {
 
 	public static void main(String[] args) throws IOException {
 		/*HttpHandler httpHandler = toHttpHandler(
@@ -30,4 +34,12 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
+//	@Autowired
+//	private Gemini gemini;
+
+
+	@Override
+	public void run(String... args) throws Exception {
+//		gemini.welcome();
+	}
 }

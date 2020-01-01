@@ -21,29 +21,29 @@ import java.util.concurrent.ConcurrentHashMap;
 @Service
 public class ConsumeFactory implements ApplicationContextAware {
     private ApplicationContext applicationContext;
-    private static Map<String, Charge> consumeMap =new ConcurrentHashMap<>();;
+    private static Map<String, Charge> consumeMap = new ConcurrentHashMap<>();
+
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
         this.applicationContext = applicationContext;
     }
 
     @PostConstruct
-    public void init(){
+    public void init() {
         ServiceLoader<Charge> operations = ServiceLoader.load(Charge.class);
         Iterator<Charge> operationIterator = operations.iterator();
-        while(operationIterator.hasNext()){
+        while (operationIterator.hasNext()) {
             Charge consume = operationIterator.next();
-            consumeMap.put(consume.getType(),applicationContext.getBean(consume.getClass()));
+            consumeMap.put(consume.getType(), applicationContext.getBean(consume.getClass()));
         }
     }
 
     /**
-     *
      * @param consumeType
      * @return
      */
-    public Charge findConsumeType(String consumeType){
-        if(consumeMap.containsKey(consumeType)){
+    public Charge findConsumeType(String consumeType) {
+        if (consumeMap.containsKey(consumeType)) {
             return consumeMap.get(consumeType);
         }
         return null;
